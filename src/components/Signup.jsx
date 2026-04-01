@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import axios, { Axios } from 'axios'
+import axios from 'axios'
 
 
 
@@ -40,6 +40,10 @@ try {
 
       <div className='col-md-6 card shadow m-2 p-4'>
         <h2>Sign up</h2>
+        {/* Binding values from form */}
+        <h6 id='loadbutton'>{loading}</h6><br/>
+        {error}<br/>
+        {success}<br/>
         <fieldset>
         <form onSubmit={handleSubmit}>
           <input type="text" 

@@ -1,5 +1,4 @@
-import React,{useEffect, useState} from 'react'
-import image from '../logo.svg'
+import React,{useState} from 'react'
 import { useLocation } from 'react-router-dom'
 import axios from 'axios'
 
@@ -42,6 +41,7 @@ const Mpesapayment = () => {
       {phone}
       {message}
       {error}
+      
      {/* phone input */}
       <form action="" onSubmit={handleSubmit}>
         <label>Phone details</label>

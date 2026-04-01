@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import image from '../logo.svg'
 import { useNavigate } from 'react-router-dom';
 import Mycarousel from './Mycarousel';
 
