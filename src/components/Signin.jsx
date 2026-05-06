@@ -45,7 +45,9 @@ try{
   return (
     <div className='row justify-content-center'>
       <div className='col-md-6 card shadow m-2 p-4' id='form'>
-        <h2>Sign in</h2>
+        <h2 className='fw-bold text-primary'>Welcome back</h2>
+        <p className='text-muted'>Welcome back and view desired cars</p>
+
         {/* binding values */}
         <h6>{loading} <br /></h6>
         {error} <br />
@@ -69,7 +71,8 @@ try{
             className='btn btn-primary'/><br/>
             
           </fieldset><br />
-          <Link to='/signup'>Dont have an account yet?sign up</Link>
+          <p className='mb-0 text-muted'>Already have an account?</p>
+          <Link to='/signup' className='text-primary fw-semibold text-decoration-none'>sign up</Link>
 
         </form>
 

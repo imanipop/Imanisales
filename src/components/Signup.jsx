@@ -39,7 +39,8 @@ try {
 
 
       <div className='col-md-6 card shadow m-2 p-4'>
-        <h2>Sign up</h2>
+        <h2 className='fw-bold text-primary'>Create Account</h2>
+        <p className='text-muted'>Join Imani Car Sales today</p>
         {/* Binding values from form */}
         <h6 id='loadbutton'>{loading}</h6><br/>
         {error}<br/>
@@ -74,7 +75,9 @@ try {
         </form>
         </fieldset>
         {/* incase someone already has an account */}
-          <Link to='/signin'>Already have account?signin</Link>
+        <p className='mb-0 text-muted'>Already have account? </p>
+          <Link to='/signin' className='text-primary fw-semibold text-decoration-none'>signin</Link>
+         
       </div>
      
            
